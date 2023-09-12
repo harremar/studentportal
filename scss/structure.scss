@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px
+}
+
+
+nav {
+    background-color: $site-blue;
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 7px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.pageContainer{
+    width: 90%;
+    margin: 20px auto;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .inputBlock{
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+
+
+        .block1{
+            width: 100%;
+            height: 50px;
+            border-radius: 5px 5px 0 0;
+            background-color: $site-blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            h1{
+                padding-top: 10px;
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: lighter;
+                font-size: 20px;
+            }
+        }
+
+        .block2{
+            width: 85%;
+            height: 320px;
+            margin: 10px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            input{
+                outline: none;
+                border: none;
+                border-bottom: 1px solid $site-fadedpurple;
+                width: 100%;
+                padding-bottom: 1px;
+                font-style: italic;
+            }
+            input::placeholder{
+                
+                color: $site-fadedpurple;
+            }
+            label{
+                display: block;
+                margin-top: 10px;
+
+            }
+
+            #submit{
+                border: none;
+                width: 100%;
+                height: 30px;
+                color: white;
+                background-color: $site-purple;
+                margin: 15px auto;
+                transition: 0.5s ease;
+            }
+            #submit:hover{
+                cursor: pointer;
+                background-color: $site-blue;
+            }
+            #getName{
+                border: none;
+                width: 100%;
+                height: 30px;
+                color: white;
+                background-color: $site-purple;
+                margin: 0px auto;
+                transition: 0.5s ease;
+            }
+            #getName:hover{
+                cursor: pointer;
+                background-color: $site-blue;
+            }
+        }
+
+
+        
+    }
+
+    .allStudentsContainer{
+        width: 820px;
+        height: 100%;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        .studentContainer{
+            width: 200px;
+            height: 220px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+            margin-bottom: 10px;  
+            margin-right: 5px;  
+
+            .studentNameBar{
+                width: 100%;
+                height: 45px;
+                color: white;
+                background-color: $site-purple;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-radius: 5px 5px 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                
+                h1{
+                    margin-top: 10px;
+                    font-weight: lighter;
+                    font-size: 18px;
+                }
+            }
+
+            .studentInfo{
+                width: 90%;
+                margin: 10px auto;
+
+                h6, h5{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 12px;
+                color: $site-blue;
+
+                span{
+                    font-weight: lighter;
+                    font-size: 11px;
+                    color: $site-fadedpurple;
+                }
+                }
+            }
+
+        }
+
+    }
+}
