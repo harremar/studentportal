@@ -10,6 +10,13 @@ function initListeners() {
     let pn = $("#phone").val();
     let em = $("#email").val();
     let cs = $("#classes").val();
+
+    // Check if any input is empty
+    if (!fn || !ln || !age || !pn || !em || !cs) {
+      alert("Please fill in all fields.");
+      return; // Prevent further processing if any input is empty
+    }
+
     let newArrClass = cs.split(",");
 
     let finalClassArray = [];
